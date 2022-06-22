@@ -1,0 +1,168 @@
+/* Card Geral */
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card{
+    max-width: 345px; 
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.imgStar{
+    width: 80%;
+    /* border: solid 1px #fff; */
+    padding: 25px 0 10px 0;
+}
+
+.imgStar img{
+    background: hsl(213, 17%, 20%);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.texts{
+    width: 80%;
+    padding: 10px 0;
+    /* border: solid 1px #fff; */
+}
+
+.texts h1{
+   margin-bottom: 10px;
+} 
+
+.texts p{
+    line-height: 22px;
+    font-size: 14px;
+    color:  hsl(216, 12%, 54%);
+    margin-bottom: 5px;
+}
+
+
+.rateForm{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    /* border: solid 1px #fff; */
+}
+
+.rateForm button{
+    padding: 15px;
+    height: 40px;
+    width: 40px;
+    background: hsl(212, 17%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    margin: 5px;
+    color: hsl(217, 12%, 63%);
+    cursor: pointer;
+}
+
+.btnSubmit{
+    width: 80%;
+    /* border: 1px solid #fff; */
+    padding-bottom: 30px;
+}
+
+#submit{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: hsl(25, 97%, 53%);
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+/* Card 2 */
+.card-2{
+    text-align: center;
+}
+
+.card-2 .imgThanks{
+    padding: 30px 0 20px 0;
+}
+
+.rateMessage{
+    background-color: hsl(213, 10%, 22%);
+    color: hsl(25, 97%, 53%);
+    padding: 10px;
+    border-radius: 40px;
+    margin-bottom: 25px;
+}
+
+.textThanks #textParagraph{
+    margin-top: 10px;
+    font-size: 16px;
+    color: hsl(216, 12%, 54%);
+    padding-bottom: 20px;
+}
+
+.hide{
+    display: none;
+}
+
+#rateAgain{
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+    padding: 5px 5px;
+    border: none;
+    outline: none;
+    background:hsl(0, 0%, 100%);
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+
+/* hover state */
+.rateForm button:hover{
+    background-color: hsl(217, 12%, 63%);
+    color: #fff;
+}
+
+#submit:hover{
+    background:hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+} 
+
+#rateAgain:hover{
+    background:hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+} 
+
+/* active state */
+.rateForm button:active{
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+} 
+
+
+/* Responsivity */
+@media (min-width: 281px) and (max-width: 330px){
+    .card{
+      max-width: 310px;
+    }
+}
+
+@media (max-width: 280px){
+    .card{
+      max-width: 270px;
+    }
+}
