@@ -130,9 +130,14 @@ main{
     margin-bottom: 20px;
 }
 
+/* Used by js */
+#numberSelected{
+    background-color: hsl(25, 97%, 53%);
+    color: #fff;
+}
 
 /* hover state */
-.rateForm button:hover{
+.rateForm .btn:hover{
     background-color: hsl(217, 12%, 63%);
     color: #fff;
 }
@@ -166,3 +171,6 @@ main{
       max-width: 270px;
     }
 }
+
+
+

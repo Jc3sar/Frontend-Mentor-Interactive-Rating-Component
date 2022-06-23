@@ -48,6 +48,7 @@ btnSubmit.addEventListener("click", () =>{
     }
 })
 
+//Function do Card-2
 btnRateAgain.addEventListener("click", () =>{
     card2.classList.add('hide');
     card.classList.remove('hide');
@@ -58,15 +59,11 @@ function removeAtributes(){
     let allButtons = document.querySelectorAll(".rateForm button");
     allButtons.forEach(e =>{
         e.removeAttribute("id", "numberSelected");
-        e.style.backgroundColor = "hsl(212, 17%, 20%)";
-        e.style.color = "hsl(217, 12%, 63%)";
     })
 }
 
 function putAtributes(elemento){
     elemento.setAttribute("id", "numberSelected");
-    elemento.style.color = "#fff";
-    elemento.style.backgroundColor = "hsl(25, 97%, 53%)";
     console.log(elemento.innerText);
     emptySubmit = false;
 }
@@ -81,7 +78,14 @@ function addResult(){
 
 
 
-
+// function removeAtributes(){
+//     let allButtons = document.querySelectorAll(".rateForm button");
+//     allButtons.forEach(e =>{
+//         e.removeAttribute("id", "numberSelected");
+//         e.style.backgroundColor = "hsl(212, 17%, 20%)";
+//         e.style.color = "hsl(217, 12%, 63%)";
+//     })
+// }
 
 
 
