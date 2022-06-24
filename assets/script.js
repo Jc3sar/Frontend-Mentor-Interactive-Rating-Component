@@ -7,7 +7,7 @@ let btnRateAgain = document.getElementById("rateAgain");
 let emptySubmit = true;
 
 // Applying Events to all buttons
-let btns = document.querySelectorAll('.btn');
+let btns = document.querySelectorAll('.rateForm .btn');
 btns.forEach(btn => {
     btn.addEventListener("click", btn =>{
         selecionaItem(btn.target);
