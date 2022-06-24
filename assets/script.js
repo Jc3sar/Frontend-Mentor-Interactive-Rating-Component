@@ -1,9 +1,4 @@
 // Taking all Buttons
-let btnOne = document.getElementById("number1");
-let btnTwo = document.getElementById("number2");
-let btnThree = document.getElementById("number3");
-let btnFour = document.getElementById("number4");
-let btnFive = document.getElementById("number5");
 let btnSubmit = document.getElementById("submit");
 let card2 = document.querySelector('.card-2');
 let card = document.querySelector(".card");
@@ -11,26 +6,13 @@ let span = document.getElementById("span");
 let btnRateAgain = document.getElementById("rateAgain");
 let emptySubmit = true;
 
-//Events in all Buttons
-btnOne.addEventListener("click", e =>{
-    selecionaItem(e.target);
-});
-
-btnTwo.addEventListener("click", e =>{
-    selecionaItem(e.target);
-});
-
-btnThree.addEventListener("click", e =>{
-    selecionaItem(e.target);
-});
-
-btnFour.addEventListener("click", e =>{
-    selecionaItem(e.target);
-});
-
-btnFive.addEventListener("click", e =>{
-    selecionaItem(e.target);
-});
+// Applying Events to all buttons
+let btns = document.querySelectorAll('.btn');
+btns.forEach(btn => {
+    btn.addEventListener("click", btn =>{
+        selecionaItem(btn.target);
+    })
+})
 
 
 //Main Functions
